@@ -1,0 +1,7 @@
+﻿{% extends "base.html" %}{% block content %}
+<section class="card"><h2>Create a drop</h2>
+<form action="/create" method="post">
+<label>Note</label><input name="note" />
+<label>Expire after (hours)</label><input type="number" name="ttl_hours" value="48" />
+<button type="submit">Create link</button>
+</form></section>{% endblock %}

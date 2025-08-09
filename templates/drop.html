@@ -1,0 +1,5 @@
+﻿{% extends "base.html" %}{% block content %}
+<section class="card"><h2>Send a file</h2>
+<form action="/d/{{ drop_id }}/upload" method="post" enctype="multipart/form-data">
+<input type="file" name="file" required /><button type="submit">Upload</button>
+</form></section>{% endblock %}
